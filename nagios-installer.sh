@@ -57,4 +57,4 @@ chmod u+s /bin/ping
 sed -i '/$NagiosBin -d $NagiosCfgFile/a (sleep 10; chmod 666 \/usr\/local\/nagios\/var\/rw\/nagios\.cmd) &'  /etc/init.d/nagios
 
 #Bit of fix recommended by few Nagios IRC folks
-yum remove gcc
+yum remove gcc -y
