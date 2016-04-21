@@ -2,7 +2,7 @@
 
 #Updating the OS along with required packages.
 yum -y update
-yum -y install make gd gd-devel supervisord wget httpd php gcc perl 
+yum -y install make gd gd-devel supervisor* supervisord* wget httpd php gcc perl 
 
 
 # Create Nagios users and groups
