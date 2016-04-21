@@ -29,7 +29,7 @@ make install-commandmode; make install-webconf
 
 # Configure email and htuser
 sed -i 's/nagios@localhost/ajeetraina@collabnix/g' /usr/local/nagios/etc/objects/contacts.cfg
-htpasswd -c /usr/local/nagios/etc/htpasswd.users nagiosadmin
+echo "nagiosadmin:M.t9dyxR3OZ3E" > /usr/local/nagios/etc/htpasswd.users
 
 # Installing Nagios plugins
 cd /root/
