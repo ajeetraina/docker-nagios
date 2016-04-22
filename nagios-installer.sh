@@ -28,7 +28,7 @@ make all; make install
 make install-init; make install-config
 make install-commandmode; make install-webconf
 
-# Configure email and htuser
+# Configure email and htuser,nagiosadmin/nagiosadmin as credential for Nagios UI
 sed -i 's/nagios@localhost/ajeetraina@collabnix/g' /usr/local/nagios/etc/objects/contacts.cfg
 echo "nagiosadmin:M.t9dyxR3OZ3E" > /usr/local/nagios/etc/htpasswd.users
 
@@ -58,4 +58,4 @@ chmod u+s /bin/ping
 sed -i '/$NagiosBin -d $NagiosCfgFile/a (sleep 10; chmod 666 \/usr\/local\/nagios\/var\/rw\/nagios\.cmd) &'  /etc/init.d/nagios
 
 #Bit of fix recommended by few Nagios IRC folks
-yum remove gcc -y
+yum remove -y gcc 
