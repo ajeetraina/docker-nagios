@@ -59,3 +59,4 @@ sed -i '/$NagiosBin -d $NagiosCfgFile/a (sleep 10; chmod 666 \/usr\/local\/nagio
 
 #Bit of fix recommended by few Nagios IRC folks
 yum remove -y gcc 
+rm –r /var/cache/yum
