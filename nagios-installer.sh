@@ -58,5 +58,5 @@ chmod u+s /bin/ping
 sed -i '/$NagiosBin -d $NagiosCfgFile/a (sleep 10; chmod 666 \/usr\/local\/nagios\/var\/rw\/nagios\.cmd) &'  /etc/init.d/nagios
 
 #Bit of fix recommended by few Nagios IRC folks
-yum remove -y gcc 
-yum install nagios-plugins-openmanage
+#yum remove -y gcc 
+yum install -y nagios-plugins-openmanage
