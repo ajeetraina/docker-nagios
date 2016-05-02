@@ -59,7 +59,7 @@ sed -i '/$NagiosBin -d $NagiosCfgFile/a (sleep 10; chmod 666 \/usr\/local\/nagio
 
 #Bit of fix recommended by few Nagios IRC folks
 #yum remove -y gcc 
-yum install -y nagios-plugins-openmanage
+yum install -y nagios-plugins-openmanage nagios-plugins-all
 #Adding check_openmanage commands section
 cat << EOF >> /usr/local/nagios/etc/objects/commands.cfg
  define command{
