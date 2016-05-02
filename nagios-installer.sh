@@ -60,3 +60,20 @@ sed -i '/$NagiosBin -d $NagiosCfgFile/a (sleep 10; chmod 666 \/usr\/local\/nagio
 #Bit of fix recommended by few Nagios IRC folks
 #yum remove -y gcc 
 yum install -y nagios-plugins-openmanage
+#Adding check_openmanage commands section
+cat << EOF >> /usr/local/nagios/etc/objects/commands.cfg
+ define command{
+         command_name check_openmanage
+         command_line  /usr/lib64/nagios/plugins/check_openmanage -H $HOSTADDRESS$ --check storage=0 -d 20
+         }
+EOF
+
+#Adding check_openmanage services section
+cat << EOF >> /usr/local/nagios/etc/objects/localhost.cfg
+define service{
+        use                             local-service
+        host_name                       localhost
+        service_description             Physical Health
+        check_command                   check_openmanage
+}
+EOF
