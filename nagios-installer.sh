@@ -64,7 +64,7 @@ yum install -y nagios-plugins-openmanage nagios-plugins-all
 cat << EOF >> /usr/local/nagios/etc/objects/commands.cfg
  define command{
          command_name check_openmanage
-         command_line  /usr/lib64/nagios/plugins/check_openmanage -H $HOSTADDRESS$ --check storage=0 -d 20
+         command_line  /usr/lib64/nagios/plugins/check_openmanage -H localhost --check storage=0 -d 20
          }
 EOF
 
