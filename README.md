@@ -1,6 +1,6 @@
 <h1>docker-nagios</h1>
 
-Docker container for Nagios 4.0.8 which includes Plugin 2.0.3<br>
+Docker container for Nagios 4.0.8 which includes Dell check_openmanage plugin <br>
 
 <h1>Usage:</h1>
 
@@ -12,6 +12,6 @@ Open up http://<ip>/nagios with the following credentials:<br>
 
 nagiosadmin/nagiosadmin<br>
 
-<h1>How to access the container?</h1><br>
+<h1>Where to look at Dell OpenManage Plugin?</h1><br>
 
-$ docker exec -it container_id  /bin/bash
+Open up Nagios UI > Go to Hostgroup > Summary > Physical Health
