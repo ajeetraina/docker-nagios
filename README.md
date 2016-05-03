@@ -8,7 +8,7 @@ To run container use the command below:<br>
 
 docker run -d --net=host ajeetraina/docker-nagios<br>
 
-Open up http://<ip>/nagios with the following credentials:<br>
+Open up http://<Host IP>/nagios with the following credentials:<br>
 
 nagiosadmin/nagiosadmin<br>
 
