@@ -12,6 +12,6 @@ Open up http://Host IP/nagios with the following credentials:<br>
 
 nagiosadmin/nagiosadmin<br>
 
-<h1>Where to look at Dell OpenManage Plugin?</h1><br>
+<h1>Where shall I look to monitor Dell Hardware?</h1><br>
 
 Open up Nagios UI > Go to Hostgroup > Summary > Physical Health
