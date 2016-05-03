@@ -1,6 +1,6 @@
 <h1>docker-nagios</h1>
 
-Docker container for Nagios 4.0.8 which includes Dell check_openmanage plugin <br>
+Docker container for Monitoring Dell Hardware through Nagios and check_openmanage plugin <br>
 
 <h1>Usage:</h1>
 
